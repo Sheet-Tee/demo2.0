@@ -97,7 +97,11 @@
       guestSignup:  CONFIG.features?.guestSignup!==false,
     });
     const PREMIUM = () => CONFIG.tier === "premium";
-    const ROW2 = [["photos","📸 Pics"],["bunker", CONFIG.bunkerName||"The Bunker"],["ace","🏆 Hole in One"]];
+    const ROW2 = [
+  ["photos", "📸 Pics"],
+  ["bunker", "🐪 " + (CONFIG.bunkerName || "The Bunker")],
+  ["ace", "🏆 Hole in One"]
+];
 
     function getWeekendDates() {
       const now = new Date();
